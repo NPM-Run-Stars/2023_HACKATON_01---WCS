@@ -46,4 +46,4 @@ For deployment, you have to go to `secrets` → app `actions` on the github repo
 
 ### Test
 
-Test branch dev
+Test branch dev2
