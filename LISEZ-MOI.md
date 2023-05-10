@@ -32,3 +32,5 @@ Ce template est conçu pour servir de base à tous les projets (P2/P3) suivants 
 - _Prettier_ : Outil de "qualité de code" également, se concentre plus particulièrement sur le style du code
 - _Standard Airbnb_ : L'un des "standards" les plus connus, même s'il n'est pas officiellement lié à ES/JS
 - _Nodemon_ : Outil permettant de relancer un serveur à chaque fois qu'un des fichiers est modifié
+
+### Test Lucas Degret
