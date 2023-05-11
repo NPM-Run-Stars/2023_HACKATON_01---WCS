@@ -10,7 +10,7 @@ import Deck from "./pages/Deck";
 
 // Page5
 
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (
