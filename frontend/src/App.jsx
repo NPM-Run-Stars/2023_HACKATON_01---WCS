@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Error from "./pages/Error";
 import Deck from "./pages/Deck";
 import Musiques from "./pages/Musiques";
+import Destinations from "./pages/Destinations";
 // Page2
 
 // Page3
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/deck" element={<Deck />} />
           <Route path="/musique" element={<Musiques />} />
+          <Route path="/destinations" element={<Destinations />} />
 
           {/* Page 2 */}
 

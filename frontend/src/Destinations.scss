@@ -1,0 +1,182 @@
+.header-filtres {
+  position: absolute;
+  margin-top: -65%;
+  z-index: 0;
+}
+
+.header-image {
+  max-height: 200px;
+  z-index: 0;
+}
+
+.clip-container {
+  position: relative;
+  margin-top: 1%;
+  z-index: 10;
+}
+
+.clip-container p {
+  color: white;
+  font-size: 3.5rem;
+  text-align: left;
+  margin-left: 24%;
+  text-transform: uppercase;
+}
+
+p.text-line3 {
+  font-size: 3rem;
+  text-transform: none;
+  margin-left: 64%;
+  margin-top: 30px;
+}
+
+.clip-text {
+  font-size: 8rem;
+  font-weight: 700;
+  text-align: left;
+  margin-left: 31%;
+  color: #e097e5;
+  z-index: 10;
+  position: relative;
+  font-family: $title-font-family;
+  margin-top: 0px;
+
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(https://media.giphy.com/media/ELk3JbUHFexpK/giphy.gif);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.destinations-all {
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Mood {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 50%;
+  gap: 10%;
+  margin-top: 5%;
+}
+
+.title-destination {
+  font-family: $title-font-family;
+  color: $purple;
+  font-size: 5rem;
+}
+
+.title-destination span {
+  font-size: 7rem;
+  line-height: 2;
+}
+
+.card_box {
+  background-color: $purple;
+  color: white;
+  font-size: 3rem;
+
+  width: 200px;
+  height: 270px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.picto-voyager {
+  width: 120px;
+  height: 120px;
+}
+
+.card_box h3 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.card_underbox {
+  background-color: #e097e5;
+  width: 210px;
+  height: 280px;
+  border-radius: 10px;
+  position: relative;
+  top: 1%;
+}
+
+.card_underbox:hover {
+  background-color: $purple;
+}
+
+.card_box:hover {
+  background-color: #e097e5;
+  text-decoration: none;
+}
+
+.voyager:hover h3 {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.checkbox-dest input {
+  position: relative;
+  left: -40%;
+  width: 50px;
+}
+
+input:checked ~ .checkmark {
+  background-color: $purple;
+}
+
+@media screen and (max-width: 640px) {
+  .header-filtres {
+    position: absolute;
+    margin-top: -65%;
+    z-index: 0;
+    top: 35%;
+  }
+
+  .destinations-all {
+    margin-top: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .Mood {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+  }
+
+  .card_underbox {
+    margin: 10%;
+  }
+
+  .header-filtres {
+    position: absolute;
+    margin-top: -55%;
+    z-index: 0;
+    top: 20%;
+  }
+
+  p.text-line3 {
+    color: $purple;
+    margin-left: 10%;
+    margin-top: 0px;
+  }
+}
