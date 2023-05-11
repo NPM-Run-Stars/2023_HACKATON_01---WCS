@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "../Deck.scss";
 import SwipeCard from "../components/SwipeCard";
 
 function Deck() {
@@ -14,8 +15,8 @@ function Deck() {
 
   return (
     <div>
-      {Userprofiles.map((Userprofile) => (
-        <SwipeCard userprofile={Userprofile} />
+      {Userprofiles.map((Userprofile, index) => (
+        <SwipeCard userprofile={Userprofile} index={index} />
       ))}
     </div>
   );

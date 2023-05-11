@@ -1,0 +1,17 @@
+.deck {
+  position: relative;
+}
+
+.card-container {
+  background-color: grey;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin: 10% 12.5%;
+
+  img {
+    width: 100%;
+  }
+
+
+}

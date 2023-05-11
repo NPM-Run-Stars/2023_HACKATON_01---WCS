@@ -1,8 +1,8 @@
 import React from "react";
 
-function SwipeCard({ userprofile }) {
+function SwipeCard({ userprofile, index }) {
   return (
-    <div className="card-container">
+    <div className="card-container" style={{ zIndex: -index + 1 }}>
       <img src={userprofile.image_pr} alt={userprofile.nom} />
       <h2>
         {userprofile.prenom} {userprofile.nom}
