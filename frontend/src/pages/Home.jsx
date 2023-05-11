@@ -72,7 +72,7 @@ export default function Home() {
       <div>
         <Description />
       </div>
-    </header>
       <NavBar />
+    </header>
   );
 }
