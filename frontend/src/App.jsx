@@ -9,7 +9,7 @@ import Error from "./pages/Error";
 
 // Page5
 
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (
