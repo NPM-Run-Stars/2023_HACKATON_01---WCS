@@ -5,9 +5,11 @@ import Montagne from "../assets/Picture-4-montagne_1920.png";
 import Concert from "../assets/Picture-1-festival_1920.png";
 import City from "../assets/Picture-3-culture_1920.png";
 import Logo from "../assets/Logo-adopter.png";
+import NavBar from "../components/Navbar";
 
 export default function Home() {
   return (
+    <>
     <header className="Header">
       <div className="main-title">
         <h1>Quel type de voyageur tu es?</h1>
@@ -57,5 +59,7 @@ export default function Home() {
         </div>
       </div>
     </header>
+    <NavBar />
+    </>
   );
 }
