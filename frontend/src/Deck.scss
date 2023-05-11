@@ -1,8 +1,8 @@
-.deck {
+.card-container {
   position: relative;
 }
 
-.card-container {
+.profile-container {
   background-color: grey;
   position: absolute;
   display: flex;
@@ -12,6 +12,4 @@
   img {
     width: 100%;
   }
-
-
 }

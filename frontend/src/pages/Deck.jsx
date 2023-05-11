@@ -15,8 +15,8 @@ function Deck() {
 
   return (
     <div>
-      {Userprofiles.map((Userprofile, index) => (
-        <SwipeCard userprofile={Userprofile} index={index} />
+      {Userprofiles.map((Userprofile, i) => (
+        <SwipeCard userprofile={Userprofile} i={i} />
       ))}
     </div>
   );
