@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "../Deck.scss";
+import NavBar from "@components/Navbar";
 import SwipeCard from "../components/SwipeCard";
 
 function Deck() {
-  const [Userprofiles, setUserProfiles] = useState([]);
+  const [userProfiles, setUserProfiles] = useState([]);
 
   useEffect(() => {
     fetch(`${import.meta.env.VITE_BACKEND_URL}/profile`)
@@ -15,9 +16,10 @@ function Deck() {
 
   return (
     <div>
-      {Userprofiles.map((Userprofile, i) => (
-        <SwipeCard userprofile={Userprofile} i={i} />
+      {userProfiles.map((userProfile, i) => (
+        <SwipeCard key={userProfile.id} userProfile={userProfile} i={i} />
       ))}
+      <NavBar />
     </div>
   );
 }
