@@ -12,9 +12,8 @@ function NavBar() {
       <img src={profil} alt="profil" width="50px" height="50px" />
       <img src={chat} alt="chat" width="50px" height="50px" />
       <img src={logo} alt="Logo" width="50px" height="50px" />
-
       <img src={match} alt="Match" width="50px" height="50px" />
-      <Link to="/destination">
+      <Link to="/destinations">
         <img
           src={destination}
           alt="Destinations vacances"
