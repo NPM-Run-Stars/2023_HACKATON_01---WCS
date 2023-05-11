@@ -1,24 +1,27 @@
 import React, { useState, useEffect } from "react";
+import SwipeCard from "../components/SwipeCard";  
 
-function Test() {
+function Deck() {
   const [Userprofiles, setUserProfiles] = useState([]);
 
   useEffect(() => {
     fetch(`${import.meta.env.VITE_BACKEND_URL}/profile`)
       .then((result) => result.json())
       .then((profiles) => {
+        console.log(profiles)
         setUserProfiles(profiles);
       });
   }, []);
 
   return (
     <>
-      <div>Test</div>
+    <div>
       {Userprofiles.map((Userprofile) => (
-        <p>{Userprofile.nom}</p>
+      <SwipeCard userprofile={Userprofile} />
       ))}
+      </div>
     </>
   );
 }
 
-export default Test;
+export default Deck;

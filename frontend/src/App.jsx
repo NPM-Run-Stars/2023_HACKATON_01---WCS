@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Error from "./pages/Error";
+import Deck from "./pages/Deck";
 // Page2
 
 // Page3
@@ -19,6 +20,7 @@ function App() {
           <Route path="*" element={<Error />} />
           {/* Page 1 */}
           <Route path="/" element={<Home />} />
+          <Route path="/deck" element={<Deck />} />
 
           {/* Page 2 */}
 
