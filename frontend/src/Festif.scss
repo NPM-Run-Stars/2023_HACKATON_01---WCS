@@ -31,7 +31,7 @@ p.text-line3 {
 }
 
 .clip-text {
-  font-size: 8rem;
+  font-size: 4rem;
   font-weight: 700;
   text-align: left;
   margin-left: 31%;
@@ -40,6 +40,7 @@ p.text-line3 {
   position: relative;
   font-family: $title-font-family;
   margin-top: 0px;
+  margin-bottom: 5rem;
 
   @supports (background-clip: text) or (-webkit-background-clip: text) {
     color: transparent;

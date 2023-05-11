@@ -1,9 +1,12 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Chill from "@pages/Chill";
+import Culture from "@pages/Culture";
+import Actif from "@pages/Actif";
 import Home from "./pages/Home";
 import Error from "./pages/Error";
 import Deck from "./pages/Deck";
 import Musiques from "./pages/Musiques";
-import Destinations from "./pages/Destinations";
+import Festif from "./pages/Festif";
 // Page2
 
 // Page3
@@ -24,7 +27,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/deck" element={<Deck />} />
           <Route path="/musique" element={<Musiques />} />
-          <Route path="/destinations" element={<Destinations />} />
+          <Route path="/festif" element={<Festif />} />
+          <Route path="/actif" element={<Actif />} />
+          <Route path="/culture" element={<Culture />} />
+          <Route path="/chill" element={<Chill />} />
 
           {/* Page 2 */}
 
