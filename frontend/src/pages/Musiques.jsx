@@ -1,18 +1,7 @@
-import React , { useState, useEffect } from 'react'
+import React from "react";
 
-const Musiques = () => {
-
-  useEffect(() => {
-    fetch("https://openwhyd.org/adrien/playlists?format=json")
-      .then((result) => result.json())
-      .then((musique) => {
-        console.log(musique);
-      });
-  }, []);
-  
-  return (
-    <div>Musiques</div>
-  )
+function Musiques() {
+  return <div>Musiques</div>;
 }
 
-export default Musiques
+export default Musiques;
