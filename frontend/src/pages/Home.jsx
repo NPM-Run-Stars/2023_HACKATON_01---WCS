@@ -5,7 +5,6 @@ import Montagne from "../assets/Picture-4-montagne_1920.png";
 import Concert from "../assets/Picture-1-festival_1920.png";
 import City from "../assets/Picture-3-culture_1920.png";
 import Logo from "../assets/Logo-adopter.png";
-import NavBar from "../components/Navbar";
 
 import Description from "../components/Description";
 
@@ -22,16 +21,14 @@ export default function Home() {
       <div className="pictures-container">
         <div className="row-picture">
           <div className="picture1">
-            <Link to="/">
-              <img
-                className="main-picture"
-                src={Montagne}
-                alt="city"
-                width="100%"
-              />
-            </Link>
+            <img
+              className="main-picture"
+              src={Montagne}
+              alt="city"
+              width="100%"
+            />
             <div className="btn button-container-1">
-              <Link to="/" className="picture-button">
+              <Link to="/actif" className="picture-button">
                 je suis actif
               </Link>
             </div>
@@ -39,8 +36,8 @@ export default function Home() {
           <div className="picture2">
             <img className="main-picture" src={Plage} alt="city" width="100%" />
             <div className="btn button-container-2">
-              <Link to="/" className="picture-button">
-                j’aime chilli
+              <Link to="/chill" className="picture-button">
+                j’aime chill
               </Link>
             </div>
           </div>
@@ -54,7 +51,7 @@ export default function Home() {
               width="100%"
             />
             <div className="btn button-container-3">
-              <Link to="/" className="picture-button">
+              <Link to="/festif" className="picture-button">
                 je suis festif
               </Link>
             </div>
@@ -62,7 +59,7 @@ export default function Home() {
           <div className="picture4">
             <img className="main-picture" src={City} alt="city" width="100%" />
             <div className="btn button-container-4">
-              <Link to="/" className="picture-button">
+              <Link to="/culture" className="picture-button">
                 j’aime la culture
               </Link>
             </div>
@@ -72,7 +69,6 @@ export default function Home() {
       <div>
         <Description />
       </div>
-      <NavBar />
     </header>
   );
 }

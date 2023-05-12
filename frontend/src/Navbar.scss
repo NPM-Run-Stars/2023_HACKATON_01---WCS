@@ -1,4 +1,8 @@
 .navbar-container {
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
   display: flex;
   justify-content: space-around;
   background-color: black;
