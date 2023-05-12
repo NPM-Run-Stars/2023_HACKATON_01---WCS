@@ -1,0 +1,56 @@
+@import "./Variables.scss";
+
+.profil-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.head-container {
+  background-color: black;
+  color: white;
+  margin: 2rem;
+  padding: 1rem 0;
+  font-family: Rampart One;
+}
+
+.info-container {
+  font-family: Kite one;
+
+  img {
+    margin: 2rem;
+  }
+}
+
+.like-container {
+  margin: 0 2rem;
+
+  .checkbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+    input {
+      margin: 0.5rem;
+    }
+
+    label {
+      font-family: Kite one;
+    }
+  }
+
+  h3 {
+    font-family: Rampart One;
+    padding: 2rem;
+    text-decoration: underline;
+  }
+}
+
+.apropos-container {
+  margin: 2rem;
+
+  h3 {
+    font-family: Rampart One;
+    text-decoration: underline;
+  }
+}

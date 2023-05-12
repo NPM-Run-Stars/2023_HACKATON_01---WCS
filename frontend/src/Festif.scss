@@ -1,0 +1,408 @@
+.header-filtres {
+  position: absolute;
+  margin-top: -65%;
+  z-index: 0;
+}
+
+/*HEADER*/
+
+.header-image {
+  max-height: 200px;
+  z-index: 0;
+}
+
+.clip-container {
+  position: relative;
+  margin-top: 1%;
+  z-index: 10;
+}
+
+.clip-container p {
+  color: white;
+  font-size: 3.5rem;
+  text-align: left;
+  margin-left: 24%;
+  text-transform: uppercase;
+}
+
+p.text-line3 {
+  font-size: 3rem;
+  text-transform: none;
+  margin-left: 64%;
+  margin-top: 30px;
+}
+
+.clip-text-festif {
+  @include clipText(#e097e5);
+
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(https://media.giphy.com/media/abt3O3BEwR6wg/giphy.gif);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.clip-text-actif {
+  @include clipText(#7ae4f0);
+
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(https://media.giphy.com/media/Pp9W9tuVF5NwQ/giphy.gif);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.clip-text-culturel {
+  @include clipText(#f1a5a5);
+
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(https://media.giphy.com/media/Q18esPAwMiofe/giphy.gif);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.clip-text-chill {
+  @include clipText(#f1dc98);
+
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(https://media.giphy.com/media/l4FGsP6zNIKOujalW/giphy.gif);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/*BOX CONTAINER*/
+
+.destinations-all {
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Mood {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 50%;
+  gap: 10%;
+  margin-top: 5%;
+}
+
+/*TITLES*/
+.title-destination-festif {
+  font-family: $title-font-family;
+  color: $purple;
+  font-size: 5rem;
+}
+
+.title-destination-actif {
+  font-family: $title-font-family;
+  color: $blue;
+  font-size: 5rem;
+}
+
+.title-destination-culturel {
+  font-family: $title-font-family;
+  color: $red;
+  font-size: 5rem;
+}
+
+.title-destination-chill {
+  font-family: $title-font-family;
+  color: $yellow;
+  font-size: 5rem;
+}
+
+.filtre-title span {
+  font-size: 7rem;
+  line-height: 2;
+}
+
+/*BOX*/
+
+.card_box-festif {
+  background-color: $purple;
+  color: white;
+  font-size: 3rem;
+
+  width: 180px;
+  height: 220px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.card_box-actif {
+  background-color: $blue;
+  color: white;
+  font-size: 3rem;
+
+  width: 180px;
+  height: 220px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.card_box-culturel {
+  background-color: $red;
+  color: white;
+  font-size: 3rem;
+
+  width: 180px;
+  height: 220px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.card_box-chilli {
+  background-color: $yellow;
+  color: white;
+  font-size: 3rem;
+
+  width: 180px;
+  height: 220px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.picto-voyager {
+  width: 120px;
+  height: 120px;
+}
+
+.card_box h3 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.card_underbox-festif {
+  background-color: #e097e5;
+  width: 190px;
+  height: 220px;
+  border-radius: 10px;
+  position: relative;
+  top: 1%;
+  margin-top: 2rem;
+}
+
+.card_underbox-actif {
+  background-color: #7ae4f0;
+  width: 190px;
+  height: 220px;
+  border-radius: 10px;
+  position: relative;
+  top: 1%;
+  margin-top: 2rem;
+}
+
+.card_underbox-culturel {
+  background-color: #c55e5e;
+  width: 190px;
+  height: 220px;
+  border-radius: 10px;
+  position: relative;
+  top: 1%;
+  margin-top: 2rem;
+}
+
+.card_underbox-chilli {
+  background-color: #f6c177;
+  width: 190px;
+  height: 220px;
+  border-radius: 10px;
+  position: relative;
+  top: 1%;
+  margin-top: 2rem;
+}
+
+.card_underbox-culture {
+  @include clipText(#e097e5);
+}
+
+.card_underbox-festif:hover {
+  background-color: $purple;
+  cursor: url(https://ani.cursors-4u.net/others/oth-9/oth873.cur), auto !important;
+}
+
+.card_underbox-actif:hover {
+  background-color: $blue;
+  cursor: url(https://ani.cursors-4u.net/others/oth-9/oth873.cur), auto !important;
+}
+
+.card_underbox-culturel:hover {
+  background-color: $red;
+  cursor: url(https://ani.cursors-4u.net/others/oth-9/oth873.cur), auto !important;
+}
+
+.card_underbox-chilli:hover {
+  background-color: $yellow;
+  cursor: url(https://ani.cursors-4u.net/others/oth-9/oth873.cur), auto !important;
+}
+
+
+.card_box-festif:hover {
+  background-color: #e097e5;
+  text-decoration: none;
+}
+
+.card_box-actif:hover {
+  background-color: #7ae4f0;
+  text-decoration: none;
+}
+
+.card_box-culturel:hover {
+  background-color: #e097e5;
+  text-decoration: none;
+}
+
+.card_box-chilli:hover {
+  background-color: #f6c177;
+  text-decoration: none;
+}
+
+.voyager:hover h3 {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.checkbox-dest input {
+  position: relative;
+  left: -40%;
+  width: 50px;
+}
+
+input:checked~.checkmark {
+  background-color: $purple;
+}
+
+@media screen and (max-width: 640px) {
+  .header-filtres {
+    position: absolute;
+    margin-top: -65%;
+    z-index: 0;
+    top: 35%;
+  }
+
+  .destinations-all {
+    margin-top: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .Mood {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+  }
+
+  .card_underbox {
+    margin: 10%;
+  }
+
+  .header-filtres {
+    position: absolute;
+    margin-top: -55%;
+    z-index: 0;
+    top: 20%;
+  }
+
+  p.text-line3 {
+    color: $purple;
+    margin-left: 10%;
+    margin-top: 0px;
+  }
+}
+
+.btn-friends {
+  z-index: 30;
+  font-size: 3.2rem;
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: auto;
+}
+
+.btnfestif {
+  @include mainBtn($purple);
+  margin-top: 5%;
+
+}
+
+.btnactif {
+  @include mainBtn($blue);
+  margin-top: 5%;
+}
+
+.btnculturel {
+  @include mainBtn($red);
+  margin-top: 5%;
+
+}
+
+.btnchill {
+  @include mainBtn($yellow);
+  margin-top: 5%;
+}
+
+.btnfestif:hover {
+  @include mainBtnHover($purple);
+  z-index: 30;
+  font-size: 3.2rem;
+  margin-top: 5%;
+}
+
+.btnactif:hover {
+  @include mainBtnHover($blue);
+  z-index: 30;
+  font-size: 3.2rem;
+  margin-top: 5%;
+}
+
+.btnculturel:hover {
+  @include mainBtnHover($red);
+  z-index: 30;
+  font-size: 3.2rem;
+  margin-top: 5%;
+}
+
+.btnchill:hover {
+  @include mainBtnHover($yellow);
+  z-index: 30;
+  font-size: 3.2rem;
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 640px) {
+  .btn-friends {
+    font-size: 2.0rem;
+  }
+}

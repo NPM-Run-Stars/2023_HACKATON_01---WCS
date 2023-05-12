@@ -1,0 +1,80 @@
+.card-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-container {
+  background-color: #252525;
+  position: absolute;
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+  width: 90%;
+  margin-top: 20px;
+  padding-bottom: 10px;
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #e4e5e6;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-family: "Kite One", sans-serif;
+    font-size: 3rem;
+    padding-top: 1rem;
+  }
+
+  p {
+    margin-top: 20px;
+    font-size: 1.8rem;
+  }
+}
+
+.card-container.left {
+  animation: slideLeft 1s forwards;
+}
+
+.card-container.right {
+  animation: slideRight 1s forwards;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .deck-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-container {
+    width: 25%;
+  }
+
+  button {
+    margin-top: 160%;
+  }
+}

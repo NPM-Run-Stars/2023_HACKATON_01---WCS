@@ -2,12 +2,26 @@ const express = require("express");
 
 const router = express.Router();
 
-const itemControllers = require("./controllers/itemControllers");
+const connection = require("./database");
 
-router.get("/items", itemControllers.browse);
-router.get("/items/:id", itemControllers.read);
-router.put("/items/:id", itemControllers.edit);
-router.post("/items", itemControllers.add);
-router.delete("/items/:id", itemControllers.destroy);
+connection
+  .getConnection()
+  .then(() => {
+    console.info("Can reach database");
+  })
+  .catch((err) => {
+    console.error(err);
+  });
+
+router.get("/profile", (req, res) => {
+  connection
+    .query("SELECT * FROM profile")
+    .then(([result]) => {
+      res.status(200).json(result);
+    })
+    .catch((err) => {
+      res.status(500).send(err);
+    });
+});
 
 module.exports = router;

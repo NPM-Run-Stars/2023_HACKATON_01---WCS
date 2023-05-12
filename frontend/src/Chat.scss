@@ -1,0 +1,40 @@
+.chat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  height: 90px;
+  border-bottom: 1px solid #f3f3f3;
+  cursor: pointer;
+  // box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  padding-bottom: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.chat__details {
+  flex: 1;
+}
+
+.chat__details > p {
+  color: gray;
+}
+
+.chat__timestamp {
+  color: lightgray;
+}
+
+.chat__image {
+  margin-right: 20px;
+}
+.profilePic {
+  margin-right: 20px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
