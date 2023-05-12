@@ -1,3 +1,11 @@
+.chat-container {
+  background-color: #efefef;
+  background-image: url(.\assets\bg-cards.png);
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+
 .chat {
   display: flex;
   align-items: center;
@@ -8,6 +16,12 @@
   cursor: pointer;
   margin: 30px 5px 50px 5px;
   padding: 10px;
+  background-color: #d8d8d8;
+  border-radius: 10px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 a {
@@ -19,7 +33,7 @@ a {
   flex: 1;
 }
 
-.chat__details > p {
+.chat__details>p {
   color: gray;
 }
 
@@ -32,4 +46,57 @@ a {
   height: 80px;
   width: 80px;
   border-radius: 50%;
+}
+
+
+
+@media screen and (max-width: 640px) {
+
+  .chat-container {
+    background-color: #efefef;
+    background-image: url(.\assets\bg-cards.png)
+  }
+
+  .chat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 80px;
+    border-bottom: 1px solid #fafafa;
+    cursor: pointer;
+    margin: 30px 5px 50px 5px;
+    padding: 10px;
+    background-color: #d8d8d8;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .chat__details {
+    flex: 1;
+  }
+
+  .chat__details>p {
+    color: gray;
+  }
+
+  .chat__timestamp {
+    color: lightgray;
+  }
+
+  .profilePic {
+    margin-right: 20px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+  }
+
 }

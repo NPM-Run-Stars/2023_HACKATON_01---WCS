@@ -14,22 +14,22 @@ function Chill() {
       style={{ backgroundImage: `url(${backgroundtravel})` }}
     >
       <div className="clip-container">
-        <p>vous êtes plutôt</p>
-        <h1 className="clip-text">Chill</h1>
+        <p>Vous êtes plutôt</p>
+        <h1 className="clip-text-chill">Chill</h1>
         <p className="text-line3">Dis nous plus...</p>
       </div>
       <div className="header-filtres">
         <img className="main-picture" src={ChillOut} alt="plage" width="100%" />
       </div>
       <div className="destinations-all">
-        <h2 className="title-destination">
+        <h2 className="title-destination-chill filtre-title">
           <span>Type</span>
           <br /> de destination
         </h2>
         <div className="Mood">
           {/* Montagne */}
-          <div className="card_underbox">
-            <div className="Actif card_box">
+          <div className="card_underbox-chill">
+            <div className="Actif card_box-chill">
               <div className="checkbox-dest">
                 <input type="checkbox" id="checkbox" name="scales" />
               </div>
@@ -42,14 +42,14 @@ function Chill() {
                 />
               </div>
               <div className="contenu">
-                <h3 className="voyager">Montage</h3>
+                <h3 className="voyager">Montagne</h3>
               </div>
             </div>
           </div>
 
           {/* Ville */}
-          <div className="card_underbox">
-            <div className="Festif card_box">
+          <div className="card_underbox-chill">
+            <div className="Festif card_box-chill">
               <div className="checkbox-dest">
                 <input type="checkbox" id="checkbox" name="scales" />
               </div>
@@ -68,8 +68,8 @@ function Chill() {
           </div>
 
           {/* Sauvage */}
-          <div className="card_underbox">
-            <div className="Culturel card_box">
+          <div className="card_underbox-chill">
+            <div className="Culturel card_box-chill">
               <div className="checkbox-dest">
                 <input type="checkbox" id="checkbox" name="scales" />
               </div>
@@ -87,8 +87,8 @@ function Chill() {
             </div>
           </div>
           {/* Plage */}
-          <div className="card_underbox">
-            <div className="Chill card_box">
+          <div className="card_underbox-chill">
+            <div className="Chill card_box-chill">
               <div className="checkbox-dest">
                 <input type="checkbox" id="checkbox" name="scales" />
               </div>
@@ -108,7 +108,7 @@ function Chill() {
         </div>
       </div>
       <Link to="/deck">
-        <button type="button">Trouvez moi des compagnons</button>
+        <button type="button" className="btn-friends btnchill" >Trouve-moi des compagnons</button>
       </Link>
     </div>
   );

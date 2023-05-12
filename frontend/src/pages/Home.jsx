@@ -13,7 +13,7 @@ export default function Home() {
     <header className="Header">
       <div className="main-title">
         <h1>Trouvez votre compagnon de voyage</h1>
-        <h3 className="second-title">Quel type de voyageur tu es?</h3>
+        <h3 className="second-title">Quel type de voyageur es-tu?</h3>
         <div className="logo">
           <img className="logo" src={Logo} alt="city" width="200px" />
         </div>
@@ -21,23 +21,21 @@ export default function Home() {
       <div className="pictures-container">
         <div className="row-picture">
           <div className="picture1">
-            <img
-              className="main-picture"
+            <img className="main-picture"
               src={Montagne}
               alt="city"
-              width="100%"
-            />
+              width="100%" />
             <div className="btn button-container-1">
               <Link to="/actif" className="picture-button">
-                je suis actif
+                Je suis actif
               </Link>
             </div>
           </div>
           <div className="picture2">
             <img className="main-picture" src={Plage} alt="city" width="100%" />
             <div className="btn button-container-2">
-              <Link to="/chill" className="picture-button">
-                j’aime chill
+              <Link to="/festif" className="picture-button">
+                J’aime chill
               </Link>
             </div>
           </div>
@@ -52,7 +50,7 @@ export default function Home() {
             />
             <div className="btn button-container-3">
               <Link to="/festif" className="picture-button">
-                je suis festif
+                Je suis festif
               </Link>
             </div>
           </div>
@@ -60,7 +58,7 @@ export default function Home() {
             <img className="main-picture" src={City} alt="city" width="100%" />
             <div className="btn button-container-4">
               <Link to="/culture" className="picture-button">
-                j’aime la culture
+                J’aime la culture
               </Link>
             </div>
           </div>
