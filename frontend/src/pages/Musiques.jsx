@@ -1,3 +1,4 @@
+import NavBar from "@components/Navbar";
 import React, { useState, useEffect } from "react";
 
 function Musiques() {
@@ -35,6 +36,7 @@ function Musiques() {
           </div>
         );
       })}
+      <NavBar />
     </div>
   );
 }
