@@ -1,12 +1,10 @@
 import React from "react";
-// import { Avatar } from '@material-ui/core'
 import { Link } from "react-router-dom";
 
 function Chat({ name, message, profilePic, timestamp }) {
   return (
     <Link to={`/chat/${name}`}>
       <div className="chat">
-        {/* <Avatar className='chat__image' src={profilePic}/> */}
         <img
           src={profilePic}
           className="profilePic"

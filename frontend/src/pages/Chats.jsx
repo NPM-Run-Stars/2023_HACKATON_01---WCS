@@ -36,6 +36,12 @@ function Chats() {
           timestamp="18 hour ago"
           profilePic="https://drive.google.com/uc?export=download&id=1bKMa5o5gos9Tq0XxeyFyqNIWoqoYavqw"
         />
+        <Chat
+          name="Lukas"
+          message="Marta n'arrête pas de me frapper.."
+          timestamp="18 hour ago"
+          profilePic="https://image.noelshack.com/fichiers/2023/19/5/1683896098-2023-05-11-22h31-02.png"
+        />
 
         <Navbar />
       </div>

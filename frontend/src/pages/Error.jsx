@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 function Error() {
   return (
     <div>
-      Error
+      Oups ! Cette page n'existe pas !
       <Navbar />
     </div>
   );

@@ -3,7 +3,6 @@ $title-font-family: "Rampart One", sans-serif;
 $second-font-family: "Kite One", sans-serif;
 $base-font-family: "Lato", sans-serif;
 
-/* COLORS*/
 $background-black: #0b1219;
 $background-grey: #939393;
 $background-light-grey: #d9d9d9;
@@ -12,8 +11,6 @@ $yellow: #a17f06;
 $purple: #8e1099;
 $blue: #1d6f9c;
 $red: #740f0f;
-
-/* BOUTON*/
 
 @mixin mainBtn($color) {
   margin-left: auto;

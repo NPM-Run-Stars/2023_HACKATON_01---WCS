@@ -10,13 +10,6 @@ import Festif from "./pages/Festif";
 import Chats from "./pages/Chats";
 import ChatScreen from "./pages/ChatScreen";
 import Profil from "./pages/Profil";
-// Page2
-
-// Page3
-
-// Page4
-
-// Page5
 
 import "./App.scss";
 
@@ -26,7 +19,6 @@ function App() {
       <Router>
         <Routes>
           <Route path="*" element={<Error />} />
-          {/* Page 1 */}
           <Route path="/" element={<Home />} />
           <Route path="/deck" element={<Deck />} />
           <Route path="/musique" element={<Musiques />} />
@@ -37,14 +29,6 @@ function App() {
           <Route path="/chat" element={<Chats />} />
           <Route path="/chat/:person" element={<ChatScreen />} />
           <Route path="/profile" element={<Profil />} />
-
-          {/* Page 2 */}
-
-          {/* Page 3 */}
-
-          {/* Page 4 */}
-
-          {/* Page 5 */}
         </Routes>
       </Router>
     </div>
