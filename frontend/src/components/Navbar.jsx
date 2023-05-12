@@ -13,7 +13,7 @@ function NavBar() {
         <img src={match} alt="Match" width="50px" height="50px" />
       </Link>
 
-      <Link to="/message">
+      <Link to="/chat">
         <img src={chat} alt="chat" width="50px" height="50px" />
       </Link>
 

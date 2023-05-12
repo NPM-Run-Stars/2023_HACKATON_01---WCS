@@ -34,7 +34,7 @@ function App() {
           <Route path="/actif" element={<Actif />} />
           <Route path="/culture" element={<Culture />} />
           <Route path="/chill" element={<Chill />} />
-          <Route path="/message" element={<Chats />} />
+          <Route path="/chat" element={<Chats />} />
           <Route path="/chat/:person" element={<ChatScreen />} />
           <Route path="/profile" element={<Profil />} />
 
