@@ -1,0 +1,15 @@
+.buttons-container {
+  position: fixed;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+}
+
+.buttons-container button {
+  padding: 10px;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  margin: 30px;
+  border: none;
+}
