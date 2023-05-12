@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "../Deck.scss";
-import NavBar from "@components/Navbar";
 import SwipeCard from "../components/SwipeCard";
 
 function Deck() {
-  const [userProfiles, setUserProfiles] = useState([]);
+  const [Userprofiles, setUserProfiles] = useState([]);
+  const [UserPasser, setUserPasser] = useState([]);
+  const [animationDirection, setAnimationDirection] = useState(null);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
     fetch(`${import.meta.env.VITE_BACKEND_URL}/profile`)
@@ -14,12 +16,45 @@ function Deck() {
       });
   }, []);
 
+  const handleClick = (direction) => {
+    if (!isAnimating) {
+      setIsAnimating(true);
+      setAnimationDirection(direction);
+      setTimeout(() => {
+        if (Userprofiles.length > 0) {
+          const updatedUserProfiles = [...Userprofiles];
+          const removedUserProfile = updatedUserProfiles.shift();
+
+          setUserProfiles(updatedUserProfiles);
+          setUserPasser((prevUserPasser) => [
+            ...prevUserPasser,
+            removedUserProfile,
+          ]);
+          setAnimationDirection(null);
+          setIsAnimating(false);
+        }
+      }, 500);
+    }
+  };
+
+  console.info(UserPasser);
+
   return (
     <div>
-      {userProfiles.map((userProfile, i) => (
-        <SwipeCard key={userProfile.id} userProfile={userProfile} i={i} />
+      {Userprofiles.map((Userprofile, i) => (
+        <SwipeCard
+          key={Userprofile.id}
+          userprofile={Userprofile}
+          i={i}
+          animationDirection={i === 0 ? animationDirection : null}
+        />
       ))}
-      <NavBar />
+      <button type="button" onClick={() => handleClick("left")}>
+        Swipe Gauche
+      </button>
+      <button type="button" onClick={() => handleClick("right")}>
+        Swipe Droite
+      </button>
     </div>
   );
 }
