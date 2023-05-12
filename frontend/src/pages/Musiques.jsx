@@ -1,5 +1,6 @@
 import NavBar from "@components/Navbar";
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Musiques() {
   const [musiques, setMusiques] = useState([]);
@@ -11,7 +12,7 @@ function Musiques() {
       ids
         .map(
           (id) =>
-            `https://freesound.org/apiv2/sounds/${id}?token=fQYg04k31l02iuT4eugfH73BgNS77VFiXptFDyRz`
+            `https://freesound.org/apiv2/sounds/${id}?token=6AJWnTRYxeSOe69kPxGJ1W9YV4hbzEuh65s4srtd`
         )
         .map((url) => fetch(url).then((res) => res.json()))
     );
@@ -32,7 +33,7 @@ function Musiques() {
           <div key={musique.url}>
             <h4>Produit par : {musique.username} </h4>
             <p>{musique.name}</p>
-            <p>{musique.url} </p>
+            <Link to={musique.url}>{musique.url}</Link>
           </div>
         );
       })}
