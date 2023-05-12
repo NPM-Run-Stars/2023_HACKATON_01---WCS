@@ -1,23 +1,59 @@
-.carte {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-  width: 100%;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 1rem;
-  color: #4f4f4f;
-  border-radius: 1rem;
-}
+@import "./Variables.scss";
 
-.mise-en-page {
-  justify-content: center;
+.profil-container {
   display: flex;
+  flex-direction: column;
+}
+
+.head-container {
+  background-color: black;
+  color: white;
+  margin: 2rem;
+  padding: 1rem 0;
+  font-family: Rampart One;
+}
+
+.info-container {
+  font-family: Kite one;
+
+  img {
+    margin: 2rem;
+  }
+}
+
+.like-container {
+  margin: 0 2rem;
+
+  .checkbox-container {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem ; 
+
+    input {
+      margin :0.5rem; 
+    }
+
+    label {
+      font-family: Kite one;
+    }
+  }
+
+  h3 {
+    font-family: Rampart One;
+    padding :2rem; 
+    text-decoration: underline;
+  }
 }
 
 
+.apropos-container {
+  margin: 2rem;
 
-.en-tete {
-  background-color: black;
-  height: 10%;
+ 
+
+  h3 {
+    font-family: Rampart One;
+    text-decoration: underline;
+  }
 }
