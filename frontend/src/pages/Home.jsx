@@ -21,10 +21,12 @@ export default function Home() {
       <div className="pictures-container">
         <div className="row-picture">
           <div className="picture1">
-            <img className="main-picture"
+            <img
+              className="main-picture"
               src={Montagne}
               alt="city"
-              width="100%" />
+              width="100%"
+            />
             <div className="btn button-container-1">
               <Link to="/actif" className="picture-button">
                 Je suis actif

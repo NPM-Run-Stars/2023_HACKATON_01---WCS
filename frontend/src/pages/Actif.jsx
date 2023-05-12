@@ -111,7 +111,9 @@ function Actif() {
         </div>
       </div>
       <Link to="/deck">
-        <button type="button" className="btn-friends btnactif">Trouve-moi des compagnons</button>
+        <button type="button" className="btn-friends btnactif">
+          Trouve-moi des compagnons
+        </button>
       </Link>
     </div>
   );

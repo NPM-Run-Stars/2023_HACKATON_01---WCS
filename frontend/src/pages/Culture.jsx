@@ -108,7 +108,9 @@ function Culture() {
         </div>
       </div>
       <Link to="/deck">
-        <button type="button" className="btn-friends btnculturel">Trouve-moi des compagnons</button>
+        <button type="button" className="btn-friends btnculturel">
+          Trouve-moi des compagnons
+        </button>
       </Link>
     </div>
   );

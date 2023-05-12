@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 
 function Chats() {
   return (
-    <div className="chat-container" >
+    <div className="chat-container">
       <div className="chats">
         <Chat
           name="Taylor"
@@ -39,7 +39,7 @@ function Chats() {
 
         <Navbar />
       </div>
-    </div >
+    </div>
   );
 }
 

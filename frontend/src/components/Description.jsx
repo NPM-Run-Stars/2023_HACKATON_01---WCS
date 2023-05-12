@@ -14,7 +14,8 @@ function Description() {
         </h2>
         <p>
           Qui n'a jamais voyagé avec ses amis à l'autre bout du monde sans pour
-          autant prendre du plaisir ? Notre service vous propose de vous mettre en relation avec des vacanciers qui partagent la même vision des
+          autant prendre du plaisir ? Notre service vous propose de vous mettre
+          en relation avec des vacanciers qui partagent la même vision des
           vacances que vous.
         </p>
       </div>

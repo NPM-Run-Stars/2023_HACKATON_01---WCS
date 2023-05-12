@@ -111,7 +111,9 @@ function Festif() {
         </div>
       </div>
       <Link to="/deck">
-        <button type="button" className="btn-friends btnfestif">Trouve-moi des compagnons</button>
+        <button type="button" className="btn-friends btnfestif">
+          Trouve-moi des compagnons
+        </button>
       </Link>
     </div>
   );
