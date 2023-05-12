@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import match from "../assets/icones-match.png";
 import chat from "../assets/icones-navbar-chat.png";
-import destination from "../assets/icones-navbar-destination.png";
+import musique from "../assets/icones-musique.png";
 import profil from "../assets/icones-navbar-profil.png";
 
 function NavBar() {
@@ -23,7 +23,7 @@ function NavBar() {
 
       <Link to="/musique">
         <img
-          src={destination}
+          src={musique}
           alt="Destinations vacances"
           width="50px"
           height="50px"
