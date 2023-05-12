@@ -4,6 +4,8 @@
   z-index: 0;
 }
 
+/*HEADER*/
+
 .header-image {
   max-height: 200px;
   z-index: 0;
@@ -30,27 +32,59 @@ p.text-line3 {
   margin-top: 30px;
 }
 
-.clip-text {
-  font-size: 4rem;
-  font-weight: 700;
-  text-align: left;
-  margin-left: 31%;
-  color: #e097e5;
-  z-index: 10;
-  position: relative;
-  font-family: $title-font-family;
-  margin-top: 0px;
-  margin-bottom: 5rem;
+.clip-text-festif {
+  @include clipText(#e097e5);
 
   @supports (background-clip: text) or (-webkit-background-clip: text) {
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    background-image: url(https://media.giphy.com/media/ELk3JbUHFexpK/giphy.gif);
+    background-image: url(https://media.giphy.com/media/abt3O3BEwR6wg/giphy.gif);
     background-size: cover;
     background-position: center;
   }
 }
+
+.clip-text-actif {
+  @include clipText(#7ae4f0);
+
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(https://media.giphy.com/media/Pp9W9tuVF5NwQ/giphy.gif);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.clip-text-culturel {
+  @include clipText(#f1a5a5);
+
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(https://media.giphy.com/media/Q18esPAwMiofe/giphy.gif);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.clip-text-chill {
+  @include clipText(#f1dc98);
+
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(https://media.giphy.com/media/l4FGsP6zNIKOujalW/giphy.gif);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/*BOX CONTAINER*/
 
 .destinations-all {
   margin-top: 3%;
@@ -72,24 +106,84 @@ p.text-line3 {
   margin-top: 5%;
 }
 
-.title-destination {
+/*TITLES*/
+.title-destination-festif {
   font-family: $title-font-family;
   color: $purple;
   font-size: 5rem;
 }
 
-.title-destination span {
+.title-destination-actif {
+  font-family: $title-font-family;
+  color: $blue;
+  font-size: 5rem;
+}
+
+.title-destination-culturel {
+  font-family: $title-font-family;
+  color: $red;
+  font-size: 5rem;
+}
+
+.title-destination-chill {
+  font-family: $title-font-family;
+  color: $yellow;
+  font-size: 5rem;
+}
+
+.filtre-title span {
   font-size: 7rem;
   line-height: 2;
 }
 
-.card_box {
+/*BOX*/
+
+.card_box-festif {
   background-color: $purple;
   color: white;
   font-size: 3rem;
 
-  width: 200px;
-  height: 270px;
+  width: 180px;
+  height: 220px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.card_box-actif {
+  background-color: $blue;
+  color: white;
+  font-size: 3rem;
+
+  width: 180px;
+  height: 220px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.card_box-culturel {
+  background-color: $red;
+  color: white;
+  font-size: 3rem;
+
+  width: 180px;
+  height: 220px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.card_box-chill {
+  background-color: $yellow;
+  color: white;
+  font-size: 3rem;
+
+  width: 180px;
+  height: 220px;
   border-radius: 10px;
   display: flex;
   justify-content: space-around;
@@ -102,24 +196,81 @@ p.text-line3 {
 }
 
 .card_box h3 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-align: center;
 }
 
-.card_underbox {
+.card_underbox-festif {
   background-color: #e097e5;
-  width: 210px;
-  height: 280px;
+  width: 190px;
+  height: 220px;
   border-radius: 10px;
   position: relative;
   top: 1%;
 }
 
-.card_underbox:hover {
-  background-color: $purple;
+.card_underbox-actif {
+  background-color: #7ae4f0;
+  width: 190px;
+  height: 220px;
+  border-radius: 10px;
+  position: relative;
+  top: 1%;
 }
 
-.card_box:hover {
+.card_underbox-culturel {
+  background-color: #c55e5e;
+  width: 190px;
+  height: 220px;
+  border-radius: 10px;
+  position: relative;
+  top: 1%;
+}
+
+.card_underbox-chill {
+  @include clipText(#eaed9b);
+}
+
+.card_underbox-culture {
+  @include clipText(#e097e5);
+}
+
+.card_underbox-festif:hover {
+  background-color: $purple;
+  cursor: url(https://ani.cursors-4u.net/others/oth-9/oth873.cur), auto !important;
+}
+
+.card_underbox-actif:hover {
+  background-color: $blue;
+  cursor: url(https://ani.cursors-4u.net/others/oth-9/oth873.cur), auto !important;
+}
+
+.card_underbox-culturel:hover {
+  background-color: $red;
+  cursor: url(https://ani.cursors-4u.net/others/oth-9/oth873.cur), auto !important;
+}
+
+.card_underbox-chill:hover {
+  background-color: $yellow;
+  cursor: url(https://ani.cursors-4u.net/others/oth-9/oth873.cur), auto !important;
+}
+
+.card_box-festif:hover {
+  background-color: #e097e5;
+  text-decoration: none;
+}
+
+.card_box-actif:hover {
+  background-color: #7ae4f0;
+  text-decoration: none;
+}
+
+.card_box-culturel:hover {
+  background-color: #e097e5;
+  text-decoration: none;
+}
+
+.card_box-chill:hover {
   background-color: #e097e5;
   text-decoration: none;
 }
@@ -179,5 +330,71 @@ input:checked ~ .checkmark {
     color: $purple;
     margin-left: 10%;
     margin-top: 0px;
+  }
+}
+
+.btn-friends {
+  z-index: 30;
+  font-size: 3.2rem;
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: auto;
+}
+
+.btnfestif {
+  @include mainBtn($purple);
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.btnactif {
+  @include mainBtn($blue);
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.btnculturel {
+  @include mainBtn($red);
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.btnchill {
+  @include mainBtn($yellow);
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.btnfestif:hover {
+  @include mainBtnHover($purple);
+  z-index: 30;
+  font-size: 3.2rem;
+  margin-top: 5%;
+}
+
+.btnactif:hover {
+  @include mainBtnHover($blue);
+  z-index: 30;
+  font-size: 3.2rem;
+  margin-top: 5%;
+}
+
+.btnculturel:hover {
+  @include mainBtnHover($red);
+  z-index: 30;
+  font-size: 3.2rem;
+  margin-top: 5%;
+}
+
+.btnchill:hover {
+  @include mainBtnHover($yellow);
+  z-index: 30;
+  font-size: 3.2rem;
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 640px) {
+  .btn-friends {
+    font-size: 2.4rem;
   }
 }

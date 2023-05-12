@@ -31,3 +31,35 @@ $red: #740f0f;
   transition: all 0.3s ease;
   font-weight: 800;
 }
+
+@mixin mainBtnHover($color-hover) {
+  color: $color-hover;
+  letter-spacing: 0.3rem;
+  transition: all 0.3s ease;
+  border: 3px dashed;
+  border-color: $color-hover;
+  line-height: 1;
+  cursor: url(https://ani.cursors-4u.net/others/oth-9/oth873.cur), auto !important;
+}
+
+@mixin clipText($color-dest) {
+  font-size: 8rem;
+  font-weight: 700;
+  text-align: left;
+  margin-left: 31%;
+  color: $color-dest;
+  z-index: 10;
+  position: relative;
+  font-family: $title-font-family;
+  margin-top: 0px;
+  margin-bottom: 5rem;
+}
+
+@mixin cardUnderbox($color-box) {
+  background-color: $color-box;
+  width: 190px;
+  height: 220px;
+  border-radius: 10px;
+  position: relative;
+  top: 1%;
+}

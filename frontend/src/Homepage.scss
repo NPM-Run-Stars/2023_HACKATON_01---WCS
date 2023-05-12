@@ -46,7 +46,7 @@
   justify-content: center;
   text-align: center;
   width: 100%;
-  z-index: 1;
+  z-index: 0;
 }
 
 @media screen and (max-width: 640px) {
@@ -102,6 +102,12 @@
 
 .picture-button {
   @include mainBtn($white);
+  position: absolute;
+  z-index: 30;
+}
+
+.picture-button:hover {
+  @include mainBtnHover($white);
   position: absolute;
   z-index: 30;
 }
@@ -169,6 +175,7 @@
   margin-right: 2%;
   padding: 0;
   outline: 0;
+  width: 60%;
 }
 
 .description h2 {
@@ -182,7 +189,7 @@
 .description p {
   text-align: left;
   padding-left: 15%;
-  font-size: 2rem;
+  font-size: 2.4rem;
   margin-top: 3%;
 }
 
@@ -192,9 +199,29 @@
 .Chill {
   display: inline-block;
   vertical-align: top;
-  width: 44%;
+  width: 70%;
   box-sizing: border-box;
   padding-left: 5%;
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 640px) {
+  .Actif,
+  .Festif,
+  .Culturel,
+  .Chill {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 5%;
+  }
+
+  .Mood {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .picto-voyager {
