@@ -1,15 +1,26 @@
-.buttons-container {
-  position: fixed;
-  bottom: 50px;
-  left: 0;
-  right: 0;
+@media screen and (max-width: 640px) {
+  .buttons-container {
+    position: absolute;
+    bottom: 114px;
+    left: 0;
+    right: 0;
+    z-index: auto;
+  }
+
+  .buttons-container button {
+    padding: 10px;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    margin: 30px;
+    border: none;
+  }
 }
 
-.buttons-container button {
-  padding: 10px;
-  border-radius: 50%;
-  height: 70px;
-  width: 70px;
-  margin: 30px;
-  border: none;
+.buttons-container {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  z-index: auto;
 }
