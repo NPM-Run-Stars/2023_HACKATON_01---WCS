@@ -9,14 +9,13 @@ function Description() {
     <div className="description-all">
       <div className="description">
         <h2>
-          Des voyageurs avec vos centres d'interet n'attendent que vous pour
-          partir
+          Des voyageurs avec votre rythme et vos centres d'intérêt n'attendent que vous pour
+          partir!
         </h2>
         <p>
           Qui n'a jamais voyagé avec ses amis à l'autre bout du monde sans pour
           autant prendre du plaisir ? Notre service vous propose de vous mettre
-          en relation avec des vacanciers qui partages vos centres d'interet et
-          donc de pouvoir partir en vacances ensemble.
+          en relation avec des vacanciers qui partagent la même vision des vacances que vous.
         </p>
       </div>
       <div className="Mood">
@@ -48,8 +47,8 @@ function Description() {
           <div className="contenu">
             <h3 className="voyager">Je suis festif</h3>
             <p>
-              Si tu es celui qui pars en vacance pour faire la fête, alors
-              rejoint moi.
+              Si tu es celui qui pars en vacances pour faire la fête, alors
+              rejoins-moi.
             </p>
           </div>
         </div>
@@ -65,7 +64,7 @@ function Description() {
           <div className="contenu">
             <h3 className="voyager">Culturel</h3>
             <p>
-              Musée, temple et autre forme d'architecture rythme tes vacances.
+              Musées, temples et autre formes d'architecture rythment tes vacances.
             </p>
           </div>
         </div>
@@ -81,7 +80,7 @@ function Description() {
           <div className="contenu">
             <h3 className="voyager">Je suis chill</h3>
             <p>
-              Si je pars en vacance c'est pour rester au bord de la piscine à me
+              Si je pars en vacances c'est pour rester au bord de la piscine à me
               reposer.
             </p>
           </div>

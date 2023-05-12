@@ -18,7 +18,7 @@ function ChatScreen() {
       message: "Chat guys😎",
     },
     {
-      message: "Hey bro This is Grate😍💛",
+      message: "Trop bien c'est génial😍💛",
     },
   ]);
 
@@ -32,7 +32,7 @@ function ChatScreen() {
   return (
     <div className="chatScreen">
       <p className="chatScreen__timestamp">
-        You match with ellen on 12/05/2023
+        Vous avez matché avec ellen le 12/05/2023
       </p>
 
       {messages.map((message) =>
@@ -57,7 +57,7 @@ function ChatScreen() {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             className="chaScreen__inputFeal"
-            placeholder="Type a message"
+            placeholder="Tapez votre message"
             type="text"
           />
           <button
@@ -65,7 +65,7 @@ function ChatScreen() {
             type="submit"
             className="chatScreen__inputButton"
           >
-            SEND
+            ENVOYER
           </button>
         </form>
       </div>

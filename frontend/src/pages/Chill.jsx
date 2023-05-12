@@ -14,9 +14,9 @@ function Chill() {
       style={{ backgroundImage: `url(${backgroundtravel})` }}
     >
       <div className="clip-container">
-        <p>vous êtes plutôt</p>
+        <p>Vous êtes plutôt</p>
         <h1 className="clip-text">Chill</h1>
-        <p className="text-line3">Dis nous plus...</p>
+        <p className="text-line3">Dis-nous en plus...</p>
       </div>
       <div className="header-filtres">
         <img className="main-picture" src={ChillOut} alt="plage" width="100%" />
@@ -42,7 +42,7 @@ function Chill() {
                 />
               </div>
               <div className="contenu">
-                <h3 className="voyager">Montage</h3>
+                <h3 className="voyager">Montagne</h3>
               </div>
             </div>
           </div>
@@ -108,7 +108,7 @@ function Chill() {
         </div>
       </div>
       <Link to="/deck">
-        <button type="button">Trouvez moi des compagnons</button>
+        <button type="button">Trouve-moi des compagnons</button>
       </Link>
     </div>
   );

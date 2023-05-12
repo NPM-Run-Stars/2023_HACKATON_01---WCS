@@ -7,7 +7,7 @@ function Chats() {
     <div className="chats">
       <Chat
         name="Taylor"
-        message="Hey Whats up!"
+        message="Coucou!"
         timestamp="40 second ago"
         profilePic="https://drive.google.com/uc?export=download&id=1f_hjy1EEKOCADR1ejmhUxU-SbBJYf7bU"
       />
@@ -25,13 +25,13 @@ function Chats() {
       />
       <Chat
         name="Tom"
-        message="Chat us! 😎"
+        message="On discute? 😎"
         timestamp="40 second ago"
         profilePic="https://drive.google.com/uc?export=download&id=1PNru-ygHnNMwlyUSI7tuJH-af1BnH5bj"
       />
       <Chat
         name="Joan"
-        message="Work 😴"
+        message="Je te rappelle plus tard 😴"
         timestamp="18 hour ago"
         profilePic="https://drive.google.com/uc?export=download&id=1bKMa5o5gos9Tq0XxeyFyqNIWoqoYavqw"
       />
