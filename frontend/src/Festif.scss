@@ -177,7 +177,7 @@ p.text-line3 {
   flex-direction: column;
 }
 
-.card_box-chill {
+.card_box-chilli {
   background-color: $yellow;
   color: white;
   font-size: 3rem;
@@ -207,6 +207,7 @@ p.text-line3 {
   border-radius: 10px;
   position: relative;
   top: 1%;
+  margin-top: 2rem;
 }
 
 .card_underbox-actif {
@@ -216,6 +217,7 @@ p.text-line3 {
   border-radius: 10px;
   position: relative;
   top: 1%;
+  margin-top: 2rem;
 }
 
 .card_underbox-culturel {
@@ -225,10 +227,17 @@ p.text-line3 {
   border-radius: 10px;
   position: relative;
   top: 1%;
+  margin-top: 2rem;
 }
 
-.card_underbox-chill {
-  @include clipText(#eaed9b);
+.card_underbox-chilli {
+  background-color: #f6c177;
+  width: 190px;
+  height: 220px;
+  border-radius: 10px;
+  position: relative;
+  top: 1%;
+  margin-top: 2rem;
 }
 
 .card_underbox-culture {
@@ -250,10 +259,11 @@ p.text-line3 {
   cursor: url(https://ani.cursors-4u.net/others/oth-9/oth873.cur), auto !important;
 }
 
-.card_underbox-chill:hover {
+.card_underbox-chilli:hover {
   background-color: $yellow;
   cursor: url(https://ani.cursors-4u.net/others/oth-9/oth873.cur), auto !important;
 }
+
 
 .card_box-festif:hover {
   background-color: #e097e5;
@@ -270,8 +280,8 @@ p.text-line3 {
   text-decoration: none;
 }
 
-.card_box-chill:hover {
-  background-color: #e097e5;
+.card_box-chilli:hover {
+  background-color: #f6c177;
   text-decoration: none;
 }
 
@@ -289,7 +299,7 @@ a:hover {
   width: 50px;
 }
 
-input:checked ~ .checkmark {
+input:checked~.checkmark {
   background-color: $purple;
 }
 
@@ -344,25 +354,23 @@ input:checked ~ .checkmark {
 .btnfestif {
   @include mainBtn($purple);
   margin-top: 5%;
-  margin-left: 5%;
+
 }
 
 .btnactif {
   @include mainBtn($blue);
   margin-top: 5%;
-  margin-left: 5%;
 }
 
 .btnculturel {
   @include mainBtn($red);
   margin-top: 5%;
-  margin-left: 5%;
+
 }
 
 .btnchill {
   @include mainBtn($yellow);
   margin-top: 5%;
-  margin-left: 5%;
 }
 
 .btnfestif:hover {
@@ -395,6 +403,6 @@ input:checked ~ .checkmark {
 
 @media screen and (max-width: 640px) {
   .btn-friends {
-    font-size: 2.4rem;
+    font-size: 2.0rem;
   }
 }

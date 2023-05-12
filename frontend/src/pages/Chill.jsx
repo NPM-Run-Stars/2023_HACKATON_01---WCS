@@ -28,8 +28,8 @@ function Chill() {
         </h2>
         <div className="Mood">
           {/* Montagne */}
-          <div className="card_underbox-chill">
-            <div className="Actif card_box-chill">
+          <div className="card_underbox-chilli">
+            <div className="Actif card_box-chilli">
               <div className="checkbox-dest">
                 <input type="checkbox" id="checkbox" name="scales" />
               </div>
@@ -48,8 +48,8 @@ function Chill() {
           </div>
 
           {/* Ville */}
-          <div className="card_underbox-chill">
-            <div className="Festif card_box-chill">
+          <div className="card_underbox-chilli">
+            <div className="Festif card_box-chilli">
               <div className="checkbox-dest">
                 <input type="checkbox" id="checkbox" name="scales" />
               </div>
@@ -68,8 +68,8 @@ function Chill() {
           </div>
 
           {/* Sauvage */}
-          <div className="card_underbox-chill">
-            <div className="Culturel card_box-chill">
+          <div className="card_underbox-chilli">
+            <div className="Culturel card_box-chilli">
               <div className="checkbox-dest">
                 <input type="checkbox" id="checkbox" name="scales" />
               </div>
@@ -87,8 +87,8 @@ function Chill() {
             </div>
           </div>
           {/* Plage */}
-          <div className="card_underbox-chill">
-            <div className="Chill card_box-chill">
+          <div className="card_underbox-chilli">
+            <div className="Chill card_box-chilli">
               <div className="checkbox-dest">
                 <input type="checkbox" id="checkbox" name="scales" />
               </div>
