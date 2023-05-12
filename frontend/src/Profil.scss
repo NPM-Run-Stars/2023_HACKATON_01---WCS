@@ -25,13 +25,13 @@
   margin: 0 2rem;
 
   .checkbox-container {
-    display: flex; 
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem ; 
+    gap: 2rem;
 
     input {
-      margin :0.5rem; 
+      margin: 0.5rem;
     }
 
     label {
@@ -41,16 +41,13 @@
 
   h3 {
     font-family: Rampart One;
-    padding :2rem; 
+    padding: 2rem;
     text-decoration: underline;
   }
 }
 
-
 .apropos-container {
   margin: 2rem;
-
- 
 
   h3 {
     font-family: Rampart One;

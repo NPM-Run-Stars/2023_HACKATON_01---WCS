@@ -7,7 +7,7 @@ function Profil() {
     <div className="profil-container">
       <h1 className="head-container">Mon profil</h1>
       <div className="info-container">
-        <img src={Random} alt="Ma photo" width="100px" height="100px" />
+        <img src={Random} alt="Random" width="100px" height="100px" />
         <p>Bob</p>
         <p>Smith</p>
         <p>30 ans</p>
@@ -16,7 +16,7 @@ function Profil() {
       </div>
       <div className="like-container">
         <h3>Mon profil :</h3>
-          <div className="checkbox-container">
+        <div className="checkbox-container">
           <label>
             <input type="checkbox" />
             Je suis actif
@@ -33,27 +33,27 @@ function Profil() {
             <input type="checkbox" />
             J'aime la culture
           </label>
-          </div>
+        </div>
       </div>
       <div className="like-container">
         <h3>Mes destinations de rêve :</h3>
         <div className="checkbox-container">
-        <label>
-          <input type="checkbox" />
-          Montagne
-        </label>
-        <label>
-          <input type="checkbox" />
-         Ville
-        </label>
-        <label>
-          <input type="checkbox" />
-          Plage
-        </label>
-        <label>
-          <input type="checkbox" />
-          Sauvage
-        </label>
+          <label>
+            <input type="checkbox" />
+            Montagne
+          </label>
+          <label>
+            <input type="checkbox" />
+            Ville
+          </label>
+          <label>
+            <input type="checkbox" />
+            Plage
+          </label>
+          <label>
+            <input type="checkbox" />
+            Sauvage
+          </label>
         </div>
       </div>
       <div className="apropos-container">
