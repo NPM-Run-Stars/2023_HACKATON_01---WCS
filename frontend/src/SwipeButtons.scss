@@ -1,26 +1,31 @@
-@media screen and (max-width: 640px) {
-  .buttons-container {
-    position: absolute;
-    bottom: 114px;
-    left: 0;
-    right: 0;
-    z-index: auto;
-  }
-
-  .buttons-container button {
-    padding: 10px;
-    border-radius: 50%;
-    height: 70px;
-    width: 70px;
-    margin: 30px;
-    border: none;
-  }
-}
-
 .buttons-container {
-  position: absolute;
-  bottom: 0px;
+  position: fixed;
+  bottom: 50px;
   left: 0;
   right: 0;
-  z-index: auto;
+}
+
+.buttons-container button {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  margin: 20px;
+  border: none;
+  color: red;
+  border: solid 1px black;
+}
+
+.buttons-container button:nth-child(2) {
+  color: black;
+}
+
+.buttons-container button svg {
+  height: 25px;
+  width: 25px;
+  margin-top: 10px;
+}
+
+.buttons-container button:nth-child(2) svg {
+  margin-bottom: 60px;
+  margin-top: 25px;
 }

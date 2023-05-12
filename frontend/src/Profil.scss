@@ -1,12 +1,9 @@
-
 @import "./Variables.scss";
-
 
 .profil-container {
   display: flex;
   flex-direction: column;
 }
-
 
 .head-container {
   background-color: black;
@@ -56,5 +53,4 @@
     font-family: Rampart One;
     text-decoration: underline;
   }
-
 }

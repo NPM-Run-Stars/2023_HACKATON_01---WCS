@@ -12,11 +12,10 @@ function SwipeCard({ userprofile, i, animationDirection }) {
           {userprofile.prenom} {userprofile.nom}
         </h2>
         <h3>{userprofile.age} ans</h3>
-        <ul>
-          <li>{userprofile.critère_1}</li>
-          <li>{userprofile.critère_2}</li>
-          <li>{userprofile.critère_3}</li>
-        </ul>
+        <p>
+          {userprofile.critère_1} | {userprofile.critère_2} |{" "}
+          {userprofile.critère_3}
+        </p>
       </div>
     </div>
   );
