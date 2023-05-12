@@ -13,9 +13,9 @@ function SwipeCard({ userprofile, i, animationDirection }) {
         </h2>
         <h3>{userprofile.age} ans</h3>
         <ul>
-            <li>{userprofile.critère_1}</li>
-            <li>{userprofile.critère_2}</li>
-            <li>{userprofile.critère_3}</li>
+          <li>{userprofile.critère_1}</li>
+          <li>{userprofile.critère_2}</li>
+          <li>{userprofile.critère_3}</li>
         </ul>
       </div>
     </div>
