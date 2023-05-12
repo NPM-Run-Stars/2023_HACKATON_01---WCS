@@ -1,0 +1,23 @@
+.carte {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  width: 100%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  color: #4f4f4f;
+  border-radius: 1rem;
+}
+
+.mise-en-page {
+  justify-content: center;
+  display: flex;
+}
+
+
+
+.en-tete {
+  background-color: black;
+  height: 10%;
+}
