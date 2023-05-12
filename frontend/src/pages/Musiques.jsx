@@ -22,12 +22,20 @@ function Musiques() {
   }, []);
 
   return (
-    <>
-      {musiques.map((musique) => (
-        <p>{musique.id}</p>
-      ))}
-      <div>HEllo</div>
-    </>
+    <div>
+      <div>
+        <h1>Welcome to our random Playlist Musique 🎶</h1>
+      </div>
+      {musiques.map((musique) => {
+        return (
+          <div>
+            <h4>Produit par : {musique.username} </h4>
+            <p>{musique.name}</p>
+            <p>{musique.url} </p>
+          </div>
+        );
+      })}
+    </div>
   );
 }
 
