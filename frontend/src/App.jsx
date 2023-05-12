@@ -7,6 +7,8 @@ import Error from "./pages/Error";
 import Deck from "./pages/Deck";
 import Musiques from "./pages/Musiques";
 import Festif from "./pages/Festif";
+import Chats from "./pages/Chats";
+import ChatScreen from "./pages/ChatScreen";
 // Page2
 
 // Page3
@@ -31,6 +33,8 @@ function App() {
           <Route path="/actif" element={<Actif />} />
           <Route path="/culture" element={<Culture />} />
           <Route path="/chill" element={<Chill />} />
+          <Route path="/message" element={<Chats />} />
+          <Route path="/chat/:person" element={<ChatScreen />} />
 
           {/* Page 2 */}
 

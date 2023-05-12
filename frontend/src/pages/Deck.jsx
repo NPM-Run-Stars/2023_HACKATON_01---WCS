@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../Deck.scss";
 import SwipeCard from "../components/SwipeCard";
+import Navbar from "../components/Navbar";
 
 function Deck() {
   const [Userprofiles, setUserProfiles] = useState([]);
@@ -55,6 +56,7 @@ function Deck() {
       <button type="button" onClick={() => handleClick("right")}>
         Swipe Droite
       </button>
+      <Navbar />
     </div>
   );
 }
